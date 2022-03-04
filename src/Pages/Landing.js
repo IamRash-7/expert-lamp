@@ -2,6 +2,7 @@ import React from 'react'
 import { signOut } from 'firebase/auth'
 import { authentication } from '../firebase'
 import { Navigate, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 const Landing = () => {
   const navigate = useNavigate()
@@ -12,8 +13,10 @@ const Landing = () => {
     signOut(authentication).then(() => {
       localStorage.clear()
       navigate('/')
+      toast.success('Successfully logged out!')
     }).catch((error) => {
       console.log(error)
+      toast.error('There was an error in logging out')
     })
   }
 
