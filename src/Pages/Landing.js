@@ -25,9 +25,9 @@ const Landing = () => {
       ? (<div className='h-screen w-full flex justify-center items-center'>
         <div
           onClick={handleSignOut}
-          className='flex justify-center items-center rounded font-sans p-0 font-medium text-lg cursor-pointer border-2 border-googleBlue'
+          className='flex justify-center items-center font-sans p-0 font-medium text-lg cursor-pointer shadow-md shadow-slate-400'
         >
-          <div className='bg-googleBlue text-white h-full rounded-r py-2 px-6'>Logout</div>
+          <div className='bg-googleBlue border-2 border-googleBlue text-white h-full rounded py-2 px-6'>Logout</div>
         </div>
       </div>)
       : (<Navigate replace to='/' />)

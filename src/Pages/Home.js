@@ -26,7 +26,7 @@ const Home = () => {
     <div className='h-screen w-full flex justify-center items-center'>
       <div
         onClick={handleSignIn}
-        className='flex justify-center items-center rounded font-sans p-0 font-medium text-lg cursor-pointer border-2 border-googleBlue'
+        className='flex justify-center items-center rounded font-sans p-0 font-medium text-lg cursor-pointer shadow-md shadow-slate-500'
       >
         <div className='flex h-full justify-center items-center'>
           <img
